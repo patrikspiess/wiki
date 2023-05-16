@@ -14,13 +14,6 @@ The interesting part is the message `certificate verify failed: unable to get lo
 
 This could be when a proxy does ssl interception and the intermediate certificate is not trusted.
 
-The same happens if you use poetry:
-
-```bash
-user@machine:~/$ poetry add requests
-
-HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/requests/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)')))
-```
 
 ## Solution
 
